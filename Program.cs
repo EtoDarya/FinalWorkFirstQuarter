@@ -21,3 +21,19 @@ void ShowArray(string [] array)
     
 Console.WriteLine();
 ShowArray(arrString);
+
+
+void CountElementsSize(string [] array)
+{
+   for (int i = 0; i < array.Length; i++)
+    {
+     int length = array[i].Length;
+     if (length <= 3)
+        {
+         Console.Write($"{array[i]}; ");
+        }
+    }
+}
+
+Console.WriteLine();
+CountElementsSize(arrString);
